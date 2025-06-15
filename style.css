@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+body {
+  background-color: rgb(49, 59, 71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume {
+  margin-top: 100px;
+  width: 210mm;
+  min-height: 297mm;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+header {
+  display: flex;
+  /* width:100%; */
+  height: 200px;
+  margin: 0px 60px;
+  margin-top: 40px;
+  position: relative;
+}
+.name {
+  position: absolute;
+  left: 0px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.name h1 {
+  font-size: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  
+}
+.name h2 {
+  font-size: 18px;
+  color: #449399;
+  font-weight: 400;
+}
+.name h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.image {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 4px solid #449399;
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  overflow: hidden; /* Ensures the image fits within the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+.info {
+  position: absolute;
+  right: 0px;
+  text-align: end;
+}
+.info p {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.2;
+}
+.info p img {
+  width: 25px;
+  padding-left: 6px;
+}
+.box1 {
+  position: absolute;
+  background-color: #313c4e;
+  width: 35px;
+  height: 59px;
+  left: -9%;
+  margin-top: 10px;
+}
+.line {
+  border-bottom: 1px solid #313c4e;
+  width: 100%;
+}
+main {
+  margin: 0px 40px;
+  display: flex;
+}
+.left {
+  /* background-color: aquamarine; */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.headings {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 3px 0px;
+}
+.subheadings {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0px;
+}
+.subheading2 {
+  font-size: 17px;
+}
+.subheading3 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.edu_info {
+  color: #449399;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.edu_info div {
+  font-style: italic;
+}
+.time {
+  position: absolute;
+  left: 0;
+}
+.cgpa {
+  position: absolute;
+  right: 0;
+}
+.subject {
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  margin-top: 30px;
+}
+.other_subjects ul {
+  display: flex;
+  /* margin-top: 5px; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.other_subjects ul li {
+  /* flex-wrap: wrap; */
+  width: 48%;
+  font-size: 15px;
+  /* padding: 3px 0px; */
+  /* margin-bottom: 5px; */
+  margin-top: 3px;
+  margin-left: 14px;
+  width:41%;
+}
+.other_subjects ul li::marker {
+  color: rgb(68, 147, 153); /* Change to your desired color */
+}
+.box2 {
+  position: absolute;
+  background-color: rgb(68, 147, 153);
+  width: 35px;
+  height: 59px;
+  left: -11%;
+  margin-top: 25px;
+}
+.edu2 {
+  margin-top: 10px;
+}
+.right {
+  /* background-color: #f0f0f0; */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  margin-top: -12px;
+}
+.lists ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.lists ul li {
+  list-style: none;
+  background-color: rgb(152, 157, 166);
+  color: white;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 3px;
+}
+.word {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  font-size: 16px;
+}
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.word div {
+  /* display: block ruby; */
+  font-size: 12px;
+  color: #449399;
+  font-style: italic;
+}
+.certificate {
+  margin-top: 7px;
+}
+.cert_detail {
+  font-size: 12px;
+  color: rgb(124, 124, 124);
+  font-style: italic;
+  margin: 5px 0px;
+}
+.exp_detail {
+  margin-left: 20px;
+}
+.exp_detail ul {
+  font-size: 13px;
+  margin-top: 1px;
+}
+.exp_detail ul li{
+  margin-left: -8px;
+  margin-top: 3px;
+}
+.exp_detail ul li::marker {
+  color: rgb(68, 147, 153); /* Change to your desired color */
+}
+.experience {
+  margin-top: 7px;
+}
+.lang {
+  margin-top: 5px;
+}
+.shoq ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoq ul li {
+  font-size: 14px;
+  margin: 3px 6px;
+  padding: 6px 12px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 5px;
+}
+.intrest{
+  margin-top: 10px;
+}
+
+@media print {
+  body {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Ensure background is white */
+    font-size: 12pt; /* Set appropriate font size */
+  }
+
+  /* Remove unnecessary elements for printing */
+  .no-print {
+    display: none;
+  }
+
+  /* Adjust layout for print */
+  .resume {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Other print-specific adjustments */
+  /* Ensure images, links, etc., are styled for print */
+}
